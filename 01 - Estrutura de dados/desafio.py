@@ -104,11 +104,11 @@ def listar_contas(contas):
 
 
 def main():
-    LIMITE_SAQUES = 3
+    QUANTIDADE_LIMITE_SAQUES = 3
+    VALOR_LIMITE_SAQUES = 500
     AGENCIA = "0001"
 
     saldo = 0
-    limite = 500
     extrato = ""
     numero_saques = 0
     usuarios = []
@@ -129,9 +129,9 @@ def main():
                 saldo=saldo,
                 valor=valor,
                 extrato=extrato,
-                limite=limite,
+                limite=VALOR_LIMITE_SAQUES,
                 numero_saques=numero_saques,
-                limite_saques=LIMITE_SAQUES,
+                limite_saques=QUANTIDADE_LIMITE_SAQUES,
             )
 
         elif opcao == "e":
